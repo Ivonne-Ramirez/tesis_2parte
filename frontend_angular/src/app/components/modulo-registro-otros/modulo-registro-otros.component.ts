@@ -121,6 +121,18 @@ export class ModuloRegistroOtrosComponent implements OnInit {
       'Content-Type': 'application/json',
     });
 
+// Muestra un swal para indicar que se está procesando
+Swal.fire({
+  title: 'Procesando...',
+  text: 'Estamos verificando los datos, por favor espere.',
+  icon: 'info',
+  showConfirmButton: false,
+  didOpen: () => {
+    console.log(`Procesando...`);
+  }
+});
+
+
     this.http
       .post('http://localhost:8080/api/administration/management/person', formData, { headers })
       .subscribe({
