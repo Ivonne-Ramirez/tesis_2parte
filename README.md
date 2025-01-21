@@ -1,2 +1,2 @@
 # tesis_2parte
-Para la institucion de la policia nacional
+Implementación para la Policía Nacional: Adaptar el sistema con requisitos específicos para usuarios con registros penales.
